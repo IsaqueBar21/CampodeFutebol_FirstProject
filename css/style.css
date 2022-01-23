@@ -1,0 +1,473 @@
+/* Estilos Gerais */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+p {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 18px;
+  line-height: 20px;
+}
+
+img {
+  display: block;
+}
+
+.btn {
+  border: 3px solid #00c76a;
+  font-family: SirinStencil;
+  padding: 10px 25px;
+  color: #00c76a;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+.btn:hover {
+  border: 5px solid #ffcf26;
+  font-family: SirinStencil;
+  font-size: 16px;
+  color: #023a20;
+}
+
+.btn-2 {
+  border: 3px solid #00c76a;
+  font-family: SirinStencil;
+  padding: 10px 25px;
+
+  color: #00c76a;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+.btn-2:hover {
+  border: 5px solid #ffcf26;
+  color: #023a20;
+}
+
+/* Header */
+.img1 {
+  width: 110px;
+  height: 110px;
+}
+
+.header {
+  /* mantem o menu sempre no topo */
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: #00c76a;
+  padding: 15px 0;
+  /*essa tag mantem o scrool do site abaixo do menu*/
+  z-index: 10;
+}
+
+.header_menu {
+  text-align: right;
+}
+
+.header_menu ul li {
+  display: inline-block;
+  margin-left: 20px;
+  margin-top: 50px;
+}
+
+.header_menu ul li a {
+  color: #fff;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-size: 14px;
+  line-height: 20px;
+  padding: 10px 0;
+}
+
+/*deixa o link colorido quando passa o mouse por cima*/
+.header_menu ul li a:hover {
+  color: #ffcf26;
+}
+
+/* Introdução */
+
+.introducao {
+  width: 100%;
+  height: 400px;
+  background: linear-gradient(0deg, #fff 5%, #00c76a 90%);
+  background-size: cover;
+  margin-top: 98px;
+  text-align: center;
+  padding-top: 125px;
+}
+
+.introducao h1 {
+  font-family: SirinStencil;
+  font-size: 58px;
+  color: #023a20;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.quote-interno {
+  max-width: 450px;
+  margin: 0 auto;
+  color: #023a20;
+  text-transform: uppercase;
+  margin-bottom: 50px;
+}
+
+.quote-interno p {
+  font-weight: bold;
+}
+
+.quote-interno p:before,
+.quote-interno p:after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: #023a20;
+  margin: 10px auto;
+}
+
+/*Produtos*/
+
+.produtos {
+  padding: 0 0 60px 0;
+}
+
+.placa_pl {
+  text-align: center;
+  padding: 30px 375px;
+}
+
+.produtos_lista li {
+  background: #00c76a;
+  text-align: center;
+}
+
+.produtos_lista li h3 {
+  font-weight: bold;
+  font-family: SirinStencil;
+  font-size: 21px;
+  line-height: 25px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: #fff;
+  padding-top: 10px;
+}
+
+.produtos_lista li h3:after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: #fff;
+  margin: 5px auto;
+}
+
+.clubes_br {
+  height: 275px;
+  width: 275px;
+}
+.clubes_int {
+  height: 275px;
+  width: 290px;
+  padding: 5px 30px 0 0;
+}
+
+.selecoes {
+  height: 275px;
+  width: 290px;
+  padding: 5px 30px 0 0;
+}
+.produtos_lista li p {
+  padding: 10px 20px 20px 20px;
+}
+.produtos_icone {
+  background: linear-gradient(0deg, #fff 15%, #00c76a 60%);
+
+  padding: 20px;
+}
+
+.call {
+  padding-top: 20px;
+  text-align: center;
+  /*necessario colocar clear para criação do padding*/
+  clear: both;
+  color: #023a20;
+}
+
+.call p {
+  color: #023a20;
+}
+
+/*lançamentos*/
+
+.lancamentos {
+  width: 100%;
+  height: 650px;
+  background: linear-gradient(90deg, #00c76a 10%, #023a20 50%);
+}
+
+.placa_lan {
+  margin-left: 42%;
+  margin-top: 30px;
+  padding: 0 auto;
+
+  position: absolute;
+}
+
+.content {
+  /*altura*/
+  height: 500px;
+
+  /*largura*/
+  width: 935px;
+
+  /*curvatura na borda*/
+  border-radius: 30px;
+
+  /*esconde todo conteudo que ultrapassa as definições anteriores*/
+  overflow: hidden;
+
+  /*posiciona o conteudo onde o dev deseja na tela
+nesse caso no centro */
+  position: relative;
+  /*abaixo do topo*/
+  top: 57%;
+  left: 50%;
+
+  /*para corrigir a pagina que ainda não esta 100% centralizada
+utiliza-se o transform: translate
+ele move o elemento em seu proprio eixo*/
+  transform: translate(-50%, -50%);
+}
+
+.navigation {
+  /*esse elemento só é mudado dentro do elemento pai: content*/
+  position: absolute;
+
+  /*medida para margem inferior*/
+  bottom: 20px;
+
+  /*medida para margem da esquerda*/
+  left: 50%;
+
+  /*correção de bug do eixo X (medida acima/anterior) */
+  transform: translate(-50%);
+
+  /*mantem os elementos lado a lado*/
+  display: flex;
+}
+
+.bar {
+  /*largura*/
+  width: 40px;
+  /*altura*/
+  height: 13px;
+  /*borda*/
+  border: 2px solid #fff;
+
+  /*para corrigir um colado ao outro*/
+  margin: 6px;
+  /*curvatura na borda*/
+  border-radius: 10px;
+  /*muda o mouse para algo clicável*/
+  cursor: pointer;
+  /*vai ser o tempo que o HOVER será aplicado*/
+  transition: 0.45s;
+}
+
+/*estilização com o mouse em cima do elemento*/
+.bar:hover {
+  background: #00c76a;
+}
+
+input {
+  display: none;
+}
+
+.slides {
+  /*passa a deixar as imagens uma ao lado da outra*/
+  display: flex;
+  /*mantem apenas uma imagem por vez*/
+  width: 500%;
+  /*evita bugs nas imagens*/
+  height: 100%;
+}
+
+.slide {
+  /*padroniza o tamanho das imagens*/
+  width: 20%;
+  /*efeito de transição das imagens*/
+  transition: 0.6s;
+}
+
+.slide img {
+  /*mantem a imagem inteira no slide*/
+  width: 100%;
+  height: 100%;
+}
+
+/*a hashtag fala diretamente com o id
+
+o checked serve para add o estilo no elemento CASO esteja selecionado
+
+o "~" add uma margem a primeira imagem apos ser checada corretamente*/
+#slide1:checked ~ .s1 {
+  margin-left: 0%;
+}
+/*o NEGATIVO fará com que a imagem vá para a direita, já o 20% é pq são 5 imagens
+100/5 = 20
+e assim é so fazer com as outras sucessivamente*/
+#slide2:checked ~ .s1 {
+  margin-left: -20%;
+}
+
+#slide3:checked ~ .s1 {
+  margin-left: -40%;
+}
+
+#slide4:checked ~ .s1 {
+  margin-left: -60%;
+}
+
+#slide5:checked ~ .s1 {
+  margin-left: -80%;
+}
+
+/*PRESERVE SEU MANTO*/
+.qualidade {
+  padding: 20px 0;
+}
+
+.qualidade_lista {
+  padding-top: 20px;
+  color: #023a20;
+}
+
+.subtitulo {
+  font-size: 27px;
+  font-family: sirinstencil;
+  line-height: 30px;
+  font-weight: bold;
+  letter-spacing: 0.1em;
+  color: #00c76a;
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 50px;
+}
+
+.subtitulo:after {
+  content: "";
+  display: block;
+  width: 70px;
+  height: 3px;
+  background: #00c76a;
+  margin: 8px auto;
+}
+
+.qualidade img {
+  margin: 20px auto;
+  margin-top: -25px;
+  height: 140px;
+}
+
+.qualidade_lista li {
+  text-align: center;
+  padding: 0 20px;
+}
+
+.qualidade_lista li h3 {
+  font-weight: bold;
+  font-family: SirinStencil;
+  font-size: 21px;
+  line-height: 25px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: #00c76a;
+  padding-top: 10px;
+}
+
+.qualidade_lista li h3:after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: #00c76a;
+  margin: 12px auto;
+}
+
+.call p {
+  padding: 15px 0 25px 0;
+  margin-bottom: 0px;
+  text-transform: uppercase;
+  font-weight: bold;
+  line-height: 35px;
+  text-align: center;
+}
+
+/*Footer*/
+
+.footer {
+  width: 100%;
+  background: #023a20;
+  color: #fff;
+  padding: 20px 0;
+}
+
+.footer h3 {
+  font-size: 18px;
+  line-height: 25px;
+  color: #ffcf26;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-weight: bold;
+}
+
+.footer h3:after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: #ffcf26;
+  margin: 6px 0 12px 0;
+}
+
+.footer_historia {
+  padding-right: 30px;
+}
+
+.footer_contato ul li {
+  font-size: 16px;
+  line-height: 24px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-weight: bold;
+}
+
+.footer_contato ul li a {
+  font-size: 16px;
+  line-height: 24px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-weight: bold;
+  color: white;
+}
+
+.footer_contato ul li a:hover {
+  color: #ffcf26;
+}
+
+.footer_redes ul li {
+  /*deixar os elementos lado a lado*/
+  display: inline-block;
+  text-align: center;
+}
+
+.footer_redes ul li a img {
+  padding: 0;
+  margin: 3px 5px 0 0;
+}
